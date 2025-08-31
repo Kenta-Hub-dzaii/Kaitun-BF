@@ -152,7 +152,7 @@ Wallpaper.ScaleType = Enum.ScaleType.Fit
 Wallpaper.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Wallpaper.Position = UDim2.new(-0.0361702, 0, -0.158876, 0)
 Wallpaper.Name = "Wallpaper"
-Wallpaper.Image = "rbxassetid://113578174462685"
+Wallpaper.Image = "rbxassetid://126252001636682"
 Wallpaper.Size = UDim2.new(1.11064, 0, 1.59989, 0)
 Wallpaper.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Wallpaper.Parent = INTRO
@@ -177,7 +177,7 @@ Status.Size = UDim2.new(0.79993, 0, 0.464041, 0)
 Status.ZIndex = 2
 Status.TextColor3 = Color3.fromRGB(255, 255, 255)
 Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Status.Text = "Kenta Hub [VIP VAZZ]"
+Status.Text = "Kenta Hub [KAITUN-BF]"
 Status.BackgroundTransparency = 1
 Status.Parent = TextHolder
 Status:SetAttribute("EngText",Status.Text)
@@ -345,8 +345,8 @@ end
 -- local sitink
 local sitinklib = loadstring(game:HttpGet("https://github.com/ErutTheTeru/uilibrary/blob/main/Sitink%20Lib/Source.lua?raw=true"))()
 local Notify = sitinklib:Notify({
-	["Title"] = "Lonely Hub - BF Kaitun",
-	["Description"] = " by LongHip12",
+	["Title"] = "Kenta Hub - BF Kaitun",
+	["Description"] = " by Kenta",
 	["Color"] = Color3.fromRGB(0, 255, 255),
 	["Content"] = "Loading...",
 	["Time"] = 1,
@@ -641,7 +641,7 @@ spawn(function()
 end)
 
 -- Main UI
-local LonelyHubFruit = Instance.new("ScreenGui")
+local KentaHubFruit = Instance.new("ScreenGui")
 local Main_1 = Instance.new("Frame")
 local FakeBlur2_1 = Instance.new("Frame")
 local UICorner_1 = Instance.new("UICorner")
@@ -677,12 +677,12 @@ local Sea_1 = Instance.new("TextLabel")
 local Pull_1 = Instance.new("TextLabel")
 
 -- Properties:
-LonelyHubFruit.Name = "LonelyHubKaitun"
-LonelyHubFruit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-LonelyHubFruit.ZIndexBehavior = Enum.ZIndexBehavior.Global
+KentaHubFruit.Name = "KentaHubKaitun"
+KentaHubFruit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+KentaHubFruit.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
 Main_1.Name = "Main"
-Main_1.Parent = LonelyHubFruit
+Main_1.Parent = KentaHubFruit
 Main_1.AnchorPoint = Vector2.new(0.5, 0.5)
 Main_1.BackgroundColor3 = Color3.fromRGB(163,162,165)
 Main_1.BackgroundTransparency = 1
@@ -802,7 +802,7 @@ StatusLabel_2.BackgroundTransparency = 1
 StatusLabel_2.Position = UDim2.new(0.302862555, 0,-0.00267730048, 0)
 StatusLabel_2.Size = UDim2.new(0.381304651, 0,0.126491323, 0)
 StatusLabel_2.Font = Enum.Font.FredokaOne
-StatusLabel_2.Text = "Lonely Stats Checker"
+StatusLabel_2.Text = "Kenta Stats Checker"
 StatusLabel_2.TextColor3 = Color3.fromRGB(255,244,94)
 StatusLabel_2.TextSize = 16
 StatusLabel_2.TextWrapped = true
@@ -1072,19 +1072,19 @@ end
 
 coroutine.wrap(SCXVacUSCqVELbBb)()
 
-local LonelyHubBtn = Instance.new("ScreenGui")
+local KentaHubBtn = Instance.new("ScreenGui")
 local dutdit = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local ImageLabel = Instance.new("ImageLabel")
 local TextButton = Instance.new("TextButton")
 
-LonelyHubBtn.ResetOnSpawn = false
-LonelyHubBtn.Name = "Lonely Hub Btn"
-LonelyHubBtn.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-LonelyHubBtn.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+KentaHubBtn.ResetOnSpawn = false
+KentaHubBtn.Name = "Kenta Hub Btn"
+KentaHubBtn.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+KentaHubBtn.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 dutdit.Name = "dut dit"
-dutdit.Parent = LonelyHubBtn
+dutdit.Parent = KentaHubBtn
 dutdit.AnchorPoint = Vector2.new(0.1, 0.1)
 dutdit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 dutdit.Position = UDim2.new(0, 20, 0.1, -6)
@@ -1098,7 +1098,7 @@ ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 ImageLabel.BackgroundTransparency = 1.0
 ImageLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
 ImageLabel.Size = UDim2.new(0, 40, 0, 40)
-ImageLabel.Image = "rbxassetid://112485471724320"
+ImageLabel.Image = "rbxassetid://130168261020105"
 
 TextButton.Parent = dutdit
 TextButton.BackgroundTransparency = 1.0
@@ -1125,7 +1125,7 @@ StatusLabel_1.TextWrapped = true
 local Lighting = game:GetService("Lighting")
 local blur = Instance.new("BlurEffect")
 blur.Size = 24
-blur.Name = "LonelyHubBlur"
+blur.Name = "KentaHubBlur"
 blur.Parent = Lighting
 
 -- Biến quản lý UI
@@ -1183,7 +1183,7 @@ end
 if getgenv().SettingFarm["White Screen"] then
     game:GetService("RunService"):Set3dRenderingEnabled(false)
     blur.Enabled = false
-    for _, gui in pairs(LonelyHubFruit:GetDescendants()) do
+    for _, gui in pairs(KentaHubFruit:GetDescendants()) do
         if gui:IsA("TextLabel") then
             gui.TextColor3 = Color3.new(0,0,0)
         end
